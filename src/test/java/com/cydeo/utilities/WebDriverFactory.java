@@ -22,7 +22,7 @@ public class WebDriverFactory {
 
         if (browserType.equalsIgnoreCase("chrome")){
 
-            WebDriverManager.chromedriver().driverVersion("101.0.4951.41").setup();
+            WebDriverManager.chromedriver().setup();
             return new ChromeDriver();
 
         }else if(browserType.equalsIgnoreCase("firefox")){
